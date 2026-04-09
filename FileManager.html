@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>FILE ORGANIZER_--_</title>
+    <link rel="stylesheet" href="FileManager.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>FILE ORGANIZER_--_</h1>
+        <div id="file-actions">
+            <input type="file" id="uploadInput" multiple onchange="toggleClearButton()">
+            <button onclick="clearSelection()" class="clear-btn">×</button>
+            <button onclick="uploadFiles()">Upload</button>
+            <button onclick="sortFiles()">Sort Files</button>
+
+
+        </div>
+        <div id="search-bar">
+            <input type="text" id="searchInput" placeholder="Search files...">
+            <button onclick="searchFiles()">Search</button>
+        </div>
+        <ul id="file-list">
+
+        </ul>
+    </div>
+
+    <script src="FileManager.js">
+
+    </script>
+</body>
+
+</html>
